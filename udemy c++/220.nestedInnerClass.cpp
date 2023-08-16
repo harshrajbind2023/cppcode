@@ -1,3 +1,5 @@
+//   m-1 error
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -23,3 +25,7 @@ int main()
 {
 	outer::inner i;
 }
+
+
+
+//
