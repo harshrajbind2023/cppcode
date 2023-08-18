@@ -25,6 +25,20 @@ int main()
 
 
 
+//   m-1
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+  vector<int> v={1,2,3,4,5,6};
+  for(int value:v){
+   cout<<value<<" ";
+  }
+
+}
+
+
+
 //  m-1
 #include <bits/stdc++.h>
 using namespace std;
@@ -217,3 +231,82 @@ int main()
 
 
 
+
+//    m-6
+#include <bits/stdc++.h>
+using namespace std;
+
+void printV(vector<int> v){
+       
+    cout<<"size = "<<v.size()<<endl;
+    cout<<"print vector"<<endl;
+    for(int i=0;i<v.size();i++){
+       cout<<v[i]<<endl;
+      
+    }
+
+}
+
+int main()
+{
+    int N;
+    cin>>N;
+    vector<int> v[N];
+
+    for(int i=0;i<N;i++){
+        int n;
+        cin>>n;
+        for(int i=0;i<n;i++){
+            int x;
+            cin>>x;
+            v[i].push_back(x);
+             
+        }
+    }
+    for(int i=0;i<N;i++){
+      printV(v[i]);
+    }
+     
+}
+
+
+
+
+//   m-7 wrong
+#include <bits/stdc++.h>
+using namespace std;
+
+void printV(vector<int> v){
+       
+    cout<<"size = "<<v.size()<<endl;
+    cout<<"print vector"<<endl;
+    for(int i=0;i<v.size();i++){
+       cout<<v[i]<<endl;
+      
+    }
+
+}
+
+int main()
+{
+    int N;
+    cin>>N;
+    vector<int> v;
+    vector<int> temp;
+
+    for(int i=0;i<N;i++){
+        int n;
+        cin>>n;
+        for(int i=0;i<n;i++){
+            int x;
+            cin>>x;
+            temp.push_back(x);
+             
+        }
+        v.push_back(temp);
+    }
+    for(int i=0;i<N;i++){
+      printV(v);
+    }
+     
+}
